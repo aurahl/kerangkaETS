@@ -6,16 +6,16 @@
 }
 
 body {
-    background-color: #f5f5f5;
-    color: #333;
+    background: #0f172a;
+    color: #e2e8f0;
 }
 
 header {
     position: fixed;
     width: 100%;
     top: 0;
-    left: 0;
-    background: #111;
+    background: rgba(15, 23, 42, 0.9);
+    backdrop-filter: blur(10px);
     padding: 15px 0;
     z-index: 1000;
 }
@@ -28,37 +28,52 @@ header {
 
 .navbar a {
     text-decoration: none;
-    color: #fff;
+    color: #e2e8f0;
     font-weight: 500;
     text-transform: uppercase;
     transition: 0.3s;
 }
 
 .navbar a:hover {
-    color: #00adb5;
+    color: #38bdf8;
 }
 
 section {
     min-height: 100vh;
-    padding: 100px 20px;
+    padding: 120px 20px 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .home {
-    background: #222;
-    color: white;
+    background: linear-gradient(135deg, #0f172a, #1e3a8a);
+}
+
+.home h1 {
+    font-size: 3rem;
+    color: #38bdf8;
 }
 
 .product {
-    background: #eaeaea;
+    background: #1e293b;
+}
+
+.product h1 {
+    color: #60a5fa;
 }
 
 .contact {
-    background: #d6d6d6;
+    background: #0f172a;
+}
+
+.contact h1 {
+    color: #93c5fd;
 }
 
 footer {
-    background: #111;
-    color: white;
+    background: #020617;
     text-align: center;
     padding: 20px;
 }
@@ -68,12 +83,18 @@ footer {
 }
 
 .social-media a {
-    color: white;
-    margin: 0 10px;
-    font-size: 24px;
+    color: #e2e8f0;
+    margin: 0 12px;
+    font-size: 26px;
     transition: 0.3s;
 }
 
 .social-media a:hover {
-    color: #00adb5;
+    color: #38bdf8;
+    transform: translateY(-3px);
+}
+
+footer p {
+    font-size: 14px;
+    color: #94a3b8;
 }
